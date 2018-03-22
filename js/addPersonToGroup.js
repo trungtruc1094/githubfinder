@@ -97,6 +97,7 @@ $(document).ready(function(){
             }
         })
         .done(function(data){
+            
             var rowCount = $('#myTable tr').length;
             if (rowCount > 1){
                 $("#myTable").find("tr:not(:first)").remove();
@@ -116,8 +117,6 @@ $(document).ready(function(){
                 cell1.innerHTML = obj.personId ;
                 cell2.innerHTML = obj.name;
             });
-
-            
         });
     });
 

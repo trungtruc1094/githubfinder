@@ -40,7 +40,7 @@
             <a class="nav-link" href="identifyPerson.html">Identify Person</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="getPerson.html">Get Person</a>
+            <a class="nav-link" href="trainGroup.html">Train</a>
           </li>
         <!--<li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
@@ -68,14 +68,16 @@
         <br>
         <h1>Detect Face</h1>
         <p class="lead">Detect Face IDs inside uploaded photo</p>
-        <label>Group ID</label>
-        <input type="text" name="groupId" id="groupId" class="form-control" placeholder="Group ID">
+        <label>URL Image</label>
+        <input type="text" name="urlImage" id="urlImage" class="form-control" placeholder="URL Image">
         <br>
-        <input type="text" name="groupName" id="groupName" class="form-control" placeholder="Group Name">
+        <button id="button_detect" class="btn btn-info" type="submit">Detect</button>
         <br>
-        <input type="text" name="userData" id="userData" class="form-control" placeholder="User Data">
-        <br>
-        <button id="button_login" class="btn btn-info" type="submit">Submit</button>
+        <table id="myTableFace" style="width:100%">
+              <tr>
+                <th>Face IDs</th>
+              </tr>
+        </table>
       </div>
       <br>
       
@@ -87,6 +89,6 @@
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/detectFace.js"></script>
   </body>
 </html>

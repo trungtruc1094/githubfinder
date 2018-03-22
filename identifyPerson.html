@@ -40,7 +40,7 @@
             <a class="nav-link" href="identifyPerson.html">Identify Person</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="getPerson.html">Get Person</a>
+            <a class="nav-link" href="trainGroup.html">Train</a>
           </li>
         <!--<li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
@@ -71,11 +71,16 @@
         <label>Group ID</label>
         <input type="text" name="groupId" id="groupId" class="form-control" placeholder="Group ID">
         <br>
-        <input type="text" name="groupName" id="groupName" class="form-control" placeholder="Group Name">
+        <input type="text" name="faceId" id="faceId" class="form-control" placeholder="Face ID">
         <br>
-        <input type="text" name="userData" id="userData" class="form-control" placeholder="User Data">
+        <button id="button_identify" class="btn btn-info" type="submit">Identify</button>
         <br>
-        <button id="button_login" class="btn btn-info" type="submit">Submit</button>
+        <table id="myTableIdentify" style="width:100%">
+              <tr>
+                <th>Person ID</th>
+                <th>Name</th> 
+              </tr>
+        </table>
       </div>
       <br>
       
@@ -87,6 +92,6 @@
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/identifyPerson.js"></script>
   </body>
 </html>
