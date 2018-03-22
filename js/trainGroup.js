@@ -60,7 +60,7 @@ $(document).ready(function(){
             //   URL below with "westus".
             url: "https://westcentralus.api.cognitive.microsoft.com/face/v1.0/persongroups/" + groupID + "/training",
             dataType: "json",
-            type: "POST",
+            type: "GET",
             
             beforeSend: function(xhrObj){
                 // Request headers

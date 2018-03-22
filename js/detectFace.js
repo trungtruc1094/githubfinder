@@ -41,7 +41,7 @@ $(document).ready(function(){
             success: function(data) {
                 data.forEach(function(obj) {
                     // console.log('success');
-                    // console.log(obj);
+                    //console.log(obj);
                     var rowCount = $('#myTableFace tr').length;
                     if (rowCount > 1){
                         $("#myTableFace").find("tr:not(:first)").remove();
